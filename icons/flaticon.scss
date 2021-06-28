@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?c95e35b7a46d0bb5bf0b2314c783a734") format("truetype"),
+url("./flaticon.woff?c95e35b7a46d0bb5bf0b2314c783a734") format("woff"),
+url("./flaticon.woff2?c95e35b7a46d0bb5bf0b2314c783a734") format("woff2"),
+url("./flaticon.eot?c95e35b7a46d0bb5bf0b2314c783a734#iefix") format("embedded-opentype"),
+url("./flaticon.svg?c95e35b7a46d0bb5bf0b2314c783a734#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "buddhist-yoga-pose": "\f101",
+    "gymnast-lying-practicing-excercise-with-a-ball-in-hands": "\f102",
+    "weightlifting": "\f103",
+    "exercise": "\f104",
+    "boxing-fighter": "\f105",
+    "camber-jumping": "\f106",
+    "man-lifting-weights": "\f107",
+    "slim": "\f108",
+    "arms-up": "\f109",
+    "pull-up": "\f10a",
+);
+
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-gymnast-lying-practicing-excercise-with-a-ball-in-hands:before {
+    content: map-get($flaticon-map, "gymnast-lying-practicing-excercise-with-a-ball-in-hands");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-boxing-fighter:before {
+    content: map-get($flaticon-map, "boxing-fighter");
+}
+.flaticon-camber-jumping:before {
+    content: map-get($flaticon-map, "camber-jumping");
+}
+.flaticon-man-lifting-weights:before {
+    content: map-get($flaticon-map, "man-lifting-weights");
+}
+.flaticon-slim:before {
+    content: map-get($flaticon-map, "slim");
+}
+.flaticon-arms-up:before {
+    content: map-get($flaticon-map, "arms-up");
+}
+.flaticon-pull-up:before {
+    content: map-get($flaticon-map, "pull-up");
+}
